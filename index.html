@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>دعوة زفاف</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <audio id="bg-music" loop prelaod="auto">
-    <source src="./waltz_then_the_gilded_then_vows.mp3.mpeg" type="audio/mpeg">
-</audio>
- <!-- Envelope Intro Screen -->
-<div id="envelope-screen" class="envelope-screen" onclick="openInvitation()">
-    <!-- 1. El video elly hy-play lma ndoos (Mkfy wra el sora fl awel) -->
-    <video id="envelope-video" class="env-video" muted playsinline preload="auto">
-        <source src="./goldleaf-offwhite-open.mp4" type="video/mp4">
-    </video>
-    
-    <!-- 2. El sora el thabta (El envelope ma2fool) di elly htban fl awel -->
-    <img id="envelope-static" src="./photo5.png" class="env-bg" alt="Envelope Closed">
-    
-</div>
-    
 
-    <!-- Hero Section (Video Background) -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="./الآية(74) من سورة الفرقان، بصوت القارئ الشيخ عبد الباسط عبد الصمد. [zUPOsZh-7lo].mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Envelope Intro Screen -->
+    <div id="envelope-screen" class="envelope-screen" onclick="openInvitation()">
+        <!-- 1. الفيديو المخفي -->
+        <video id="envelope-video" class="env-video" muted playsinline preload="auto">
+            <source src="./goldleaf-offwhite-open.mp4" type="video/mp4">
+        </video>
+        
+        <!-- 2. الصورة الثابتة -->
+        <img id="envelope-static" src="./photo6.jfif" class="env-bg" alt="Envelope Closed">
+        
+      
+    </div>
+
+    <!-- Hero Section -->
     <section class="hero-video-section">
         <!-- Background Video -->
         <video class="bg-video" autoplay loop muted playsinline>
-            <!-- 7oti masar el video bta3ek hena -->
             <source src="./Luxury_illustration_with_atmosph…_202605232035 (1).mp4" type="video/mp4">
-        </video>
-        
+        </video> <!-- إغلاق تاغ الفيديو هنا بشكل صحيح -->
 
+        <!-- النصوص فوق الفيديو -->
+        <div class="invitation-content">
+            <h1 class="names">حسين <span class="and">&</span> حبيبة</h1>
+            <p class="date">يوم الأحد، ٦ سبتمبر ٢٠٢٦</p>
+            <p class="time">الساعة التاسعه مساءً</p>
+        </div>
+    </section>
 
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
