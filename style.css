@@ -738,3 +738,51 @@ body {
         line-height: 1.7;
     }
 }
+
+
+/* Container الكارت الأساسي - خلّيناه شفاف تماماً بدون خلفية بيضاء */
+.invitation-glass-card {
+  background: transparent !important; /* إزالة الخلفية البيضاء */
+  box-shadow: none !important; /* إزالة الظل الأبيض الخارجي */
+  border: none !important;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Polaroids Container */
+.polaroid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* المسافة بين الصورتين */
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* إطار الصورة الفردي - إزالة الخلفية والحدود البيضاء وتكبير الحجم */
+.polaroid-frame {
+  background: transparent !important; /* إزالة الخلفية البيضاء للـ Polaroid */
+  box-shadow: none !important; /* إزالة الظل البيضاوي */
+  padding: 0 !important;
+  border: none !important;
+  width: 70%; /* تكبير حجم الإطار مع بقائهما بجانب بعضهما */
+  max-width: 300px; /* يمكنك زيادة هذا الرقم لتكبير الصور أكثر */
+}
+
+/* الصورة نفسها داخل الإطار */
+.polaroid-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px; /* خياري: حواف ناعمة خفيفة للصورة */
+}
+
+/* التدوير اللطيف للإطارين لتمرير تصميم البولاروايد */
+.frame-left {
+  transform: rotate(-3deg);
+}
+
+.frame-right {
+  transform: rotate(3deg);
+}
