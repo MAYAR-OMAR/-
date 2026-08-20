@@ -1,6 +1,7 @@
 /* 1. استدعاء الخطوط في أول سطر بالملف */
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi+Fun:wght@700&family=Great+Vibes&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #000;
+    background-color:transparent;
 }
 
 body {
@@ -123,5 +124,616 @@ body {
     }
     .invitation-content .time {
         font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/* el sf7a el tnya */
+/* Details Section */
+.details-section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: transparent; /* نفس درجة لون بيج خلفية الإطار بالظبط */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.card-container {
+    position: relative;
+    width: 90%;
+    max-width: 420px;
+    height: 88vh;
+    max-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* صورة الإطار */
+.card-frame-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+}
+
+/* النصوص داخل الكارت - استخدام خط كاليجرافي عربي موحد */
+.card-text-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #4a3828; /* لون بني كلاسيكي دافئ */
+    padding: 40px 25px;
+    width: 85%;
+    font-family: 'Aref Ruqaa', 'Amiri', serif; /* خط الرقعة الكلاسيكي لكل النصوص */
+}
+
+.card-text-content .basmala {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3b2b1e;
+    margin-bottom: 5px;
+}
+
+.divider-icon {
+    color: #a88348;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.card-text-content .hosts {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #3b2b1e;
+}
+
+.card-text-content .invitation-phrase {
+    font-family: 'Amiri', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #524032;
+}
+
+.card-text-content .event-details {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.card-text-content .event-details strong {
+    font-size: 1.35rem;
+    color: #2c1f15;
+}
+
+.venue-block .venue-title {
+    font-family: 'Amiri', serif;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.venue-block .venue-name {
+    font-family: 'Great Vibes', cursive; /* خط فرنسي ملكي للقاعة */
+    font-size: 2.5rem;
+    color: #3b2b1e;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/* responsive mobile */
+@media (max-width: 480px) {
+    .card-text-content { padding: 30px 15px; }
+    .card-text-content .basmala { font-size: 1.5rem; }
+    .card-text-content .hosts { font-size: 1.3rem; }
+    .card-text-content .invitation-phrase { font-size: 1.1rem; }
+    .card-text-content .event-details { font-size: 1.1rem; }
+    .venue-block .venue-name { font-size: 2.1rem; }
+}
+
+
+/* تنسيق الوردة الزخرفية */
+.divider-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.flower-icon {
+    width: 38px;
+    height: auto;
+    object-fit: contain;
+    /* ضبط لون الوردة للدرجة الذهبية البنية */
+    filter: sepia(0.6) hue-rotate(340deg) saturate(1.8) brightness(0.7);
+}
+/* ضبط حجم ومحاذاة صورة البسملة */
+.basmala-img {
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px auto;
+    object-fit: contain;
+}
+
+/* للموبايل لتفادي تداخل الأحجام */
+@media (max-width: 480px) {
+    .basmala-img {
+        width: 65%;
+        max-width: 200px;
+    }
+}
+/* الزخرفة الفاصلة أسفل الصفحة */
+.bottom-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.bottom-ornament-img {
+    width: 85%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ضبط المقاس للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .bottom-ornament-img {
+        width: 80%;
+        max-width: 220px;
+    }
+}
+
+
+
+
+
+/* sf7a el tlta bt3t countadown */
+/* Section Container */
+.third-page-section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+    z-index: 1;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- Countdown Style --- */
+.countdown-main-title {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 2rem;
+    color: #4a3828;
+    margin-bottom: 5px;
+}
+
+.divider-wrapper {
+    margin: 10px 0 18px 0;
+}
+
+.countdown-divider-img {
+    width: 180px;
+    height: auto;
+}
+
+.inline-timer-display {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    direction: ltr;
+}
+
+.timer-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 55px;
+}
+
+.number-display {
+    font-family: 'Cinzel', serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #4a3828;
+    line-height: 1;
+}
+
+.unit-label {
+    font-family: 'Amiri', serif;
+    font-size: 0.95rem;
+    color: #6e523b;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.timer-colon {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #4a3828;
+}
+
+/* Spacer */
+.section-spacer {
+    margin: 25px 0 15px 0;
+}
+.spacer-icon {
+    width: 30px;
+    opacity: 0.8;
+}
+
+/* --- Location Style --- */
+.location-title {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 1.6rem;
+    color: #4a3828;
+    margin-bottom: 4px;
+}
+
+.venue-name-text {
+    font-family: 'Amiri', serif;
+    font-size: 1.2rem;
+    color: #6e523b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.map-link {
+    display: block;
+    text-decoration: none;
+}
+
+.map-image-card {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 160px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #d4af37;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    margin: 0 auto 15px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.map-image-card:hover {
+    transform: scale(1.02);
+}
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(74, 56, 40, 0.75);
+    color: #fff;
+    font-family: 'Amiri', serif;
+    font-size: 0.85rem;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.location-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #4a3828;
+    color: #fff8f0;
+    font-family: 'Amiri', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #d4af37;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.location-btn:hover {
+    background-color: #6e523b;
+    color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .number-display { font-size: 1.8rem; }
+    .countdown-main-title { font-size: 1.6rem; }
+    .map-image-card { height: 230px; }
+}
+
+/* sf7et el sowr */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+
+/* Section Container */
+.std-page-section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    z-index: 1;
+}
+
+/* Glassmorphism Outer Card */
+.invitation-glass-card {
+    width: 92%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.65); /* زجاجي بيج فاتح شبه شفاف */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    padding: 35px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Subtitle & Date */
+.std-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: #b19368;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.std-date {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: #332920;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* Polaroid Container */
+.polaroid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Polaroid Frames - تكبير حجم الإطار والصورة */
+.polaroid-frame {
+    background: #ffffff;
+    padding: 10px 10px 32px 10px; /* الحافة البيضاء العريضة من الأسفل */
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+    width: 165px; /* تكبير عرض البولاروايد */
+}
+
+.frame-left {
+    transform: rotate(-3deg);
+}
+
+.frame-right {
+    transform: rotate(3deg);
+}
+
+.polaroid-frame:hover {
+    transform: scale(1.05) rotate(0deg);
+    z-index: 2;
+}
+
+.polaroid-img {
+    width: 100%;
+    height: 185px; /* تكبير ارتفاع الصورة داخل الإطار */
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+}
+
+/* Icons Style */
+.illustrations-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0 20px 0;
+}
+
+.vector-icon {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Names & Invitation Title */
+.join-us-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #6e5f53;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.couple-names {
+    font-family: 'Alex Brush', cursive;
+    font-size: 3.4rem;
+    color: #2b2017;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .invitation-glass-card {
+        padding: 28px 15px;
+    }
+    .polaroid-frame {
+        width: 140px; /* حجم بارز وكبير جداً للشاشات الصغيرة */
+        padding: 8px 8px 26px 8px;
+    }
+    .polaroid-img {
+        height: 160px;
+    }
+    .couple-names {
+        font-size: 2.7rem;
+    }
+    .std-date {
+        font-size: 1.8rem;
+    }
+}
+/* تكبير الإطار وزيادة المساحة */
+.polaroid-frame {
+    width: 180px; /* تكبير عرض الكارت */
+    padding: 10px 10px 35px 10px;
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+/* ضبط الصورة وتكبير الارتفاع لمنع قطع الرأس */
+.polaroid-img {
+    width: 100%;
+    height: 220px; /* زيادة الارتفاع عشان تبيّن التفاصيل */
+    object-fit: cover;
+    object-position: top center; /* السطر ده هو اللي بيضمن ظهور الراس كاملة */
+    border-radius: 2px;
+    display: block;
+}
+
+/* ضبط المقاسات لشاشات الموبايل */
+@media (max-width: 480px) {
+    .polaroid-frame {
+        width: 155px; /* حجم كبيير ومناسب جداً للموبايل */
+        padding: 8px 8px 30px 8px;
+    }
+    .polaroid-img {
+        height: 195px;
+        object-position: top center;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap');
+
+/* Section Container - تملأ الشاشة تماماً */
+.closing-page-section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px; /* مسافة بسيطة جداً للحواف */
+    z-index: 1;
+}
+
+/* الكارت الأبيض - تملأ العرض تقريباً */
+.closing-card-full {
+    width: 96%; /* تقريباً كامل عرض الشاشة */
+    max-width: 480px; /* مقاس فخم وواسع */
+    background-color: #fff9f0;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(74, 56, 40, 0.12);
+    padding: 60px 25px; /* مساحة داخلية كبيرة وفخمة */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e0c8a8;
+}
+
+/* الآية القرآنية - تكبير واضح */
+.quran-verse {
+    font-family: 'Amiri', serif;
+    font-size: 1.65rem; /* تكبير واضح من 1.4 لـ 1.65 */
+    color: #3b2b1e;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* تنسيق الفاصل الذهبي */
+.golden-divider-wrapper {
+    margin: 15px 0 35px 0;
+}
+
+.golden-divider-img {
+    width: 200px; /* تكبير حجم الفاصل */
+    height: auto;
+}
+
+/* نصوص الشكر - تكبير */
+.main-thank-you, .waiting-text {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 1.3rem; /* تكبير من 1.1 لـ 1.3 */
+    color: #6e523b;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.waiting-text {
+    margin-bottom: 0;
+}
+
+/* Responsive للموبايل - لضمان بقائها كبيرة ومناسبة */
+@media (max-width: 480px) {
+    .closing-card-full {
+        width: 95%;
+        padding: 50px 18px;
+    }
+    .quran-verse {
+        font-size: 1.45rem;
+        line-height: 1.8;
+    }
+    .golden-divider-img {
+        width: 170px;
+    }
+    .main-thank-you, .waiting-text {
+        font-size: 1.15rem;
+        line-height: 1.7;
     }
 }
