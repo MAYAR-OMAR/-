@@ -474,7 +474,8 @@ body {
 @media (max-width: 480px) {
     .number-display { font-size: 1.8rem; }
     .countdown-main-title { font-size: 1.6rem; }
-    .map-image-card { height: 230px; }
+    .map-image-card { height: 270px; }
+    .map-image-card { width: 270px; }
 }
 
 /* sf7et el sowr */
