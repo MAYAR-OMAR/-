@@ -80,23 +80,4 @@ body {
 
 
 
-/* التنسيق الأساسي للختم كما هو */
-.wax-seal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 190px; /* أو الحجم الذي تختارينه */
-    height: auto;
-    z-index: 10;
-    cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.4s ease; /* transition هنا مهمة للاختفاء */
-    filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
-    opacity: 1; /* الحالة الافتراضية مرئية */
-}
 
-/* كلاس الاختفاء للختم */
-.wax-seal.fade-out {
-    opacity: 0; /* يصبح شفافاً تماماً */
-    transform: translate(-50%, -50%) scale(0.8); /* يتقلص قليلاً لإعطاء تأثير أجمل عند الاختفاء */
-}
